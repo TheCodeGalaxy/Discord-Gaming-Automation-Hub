@@ -1,0 +1,44 @@
+{
+  "1091500": {
+    "success": true,
+    "data": {
+      "type": "game",
+      "name": "Cyberpunk 2077",
+      "steam_appid": 1091500,
+      "required_age": 18,
+      "is_free": false,
+      "detailed_description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City.",
+      "short_description": "Open-world action-adventure RPG from CD PROJEKT RED.",
+      "header_image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
+      "developers": ["CD PROJEKT RED"],
+      "publishers": ["CD PROJEKT RED"],
+      "genres": [
+        {"description": "RPG", "id": "3"},
+        {"description": "Action", "id": "1"},
+        {"description": "Adventure", "id": "25"}
+      ],
+      "tags": [
+        {"description": "Open World", "id": 58},
+        {"description": "RPG", "id": 12},
+        {"description": "Story Rich", "id": 34}
+      ],
+      "release_date": {
+        "coming_soon": false,
+        "date": "10 Dec, 2020"
+      },
+      "metacritic": {
+        "score": 86,
+        "url": "https://www.metacritic.com/game/pc/cyberpunk-2077"
+      },
+      "recommendations": {
+        "total": 350000
+      },
+      "ratings": {
+        "positive": {
+          "total_positive": 300000,
+          "total_negative": 50000
+        }
+      }
+    }
+  }
+}

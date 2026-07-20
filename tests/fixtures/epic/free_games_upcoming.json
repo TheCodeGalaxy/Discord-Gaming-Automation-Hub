@@ -1,0 +1,64 @@
+{
+  "data": {
+    "Catalog": {
+      "searchStore": {
+        "elements": [
+          {
+            "id": "wonder",
+            "title": "Wonder Game",
+            "productName": "Wonder Game",
+            "description": "An upcoming free title.",
+            "shortDescription": "Coming soon to Epic Games Store.",
+            "namespace": "wonder",
+            "catalogId": "wonder-game",
+            "offerType": "BASE_GAME",
+            "keyImages": [
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/wonder/EGS_Wonder_Dev_Game_S1_2560x1440-abc"
+              }
+            ],
+            "releaseDate": "2024-08-01T00:00:00.000Z",
+            "genres": [
+              {"name": "Action"},
+              {"name": "Adventure"}
+            ],
+            "tags": [
+              {"name": "Single Player"},
+              {"name": "Story Rich"}
+            ],
+            "developer": "Wonder Dev",
+            "publisher": "Wonder Publisher",
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2024-07-04T15:00:00.000Z",
+                      "endDate": "2024-07-11T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 100
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "price": {
+              "totalPrice": {
+                "originalPrice": 2999,
+                "discountPrice": 0,
+                "fmtPrice": {
+                  "originalPrice": "29.99",
+                  "discountPrice": "0"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

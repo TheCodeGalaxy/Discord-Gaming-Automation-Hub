@@ -1,0 +1,88 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.test
+secrets/
+*.key
+*.pem
+*.crt
+
+# Google Calendar credentials
+credentials.json
+service-account*.json
+google-credentials*.json
+
+# Python bytecode and packages
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.whl
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and coverage
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.tox/
+.nox/
+
+# Static type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Linting and code quality
+.ruff_cache/
+.bandit/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and runtime data
+logs/
+*.log
+data/*.db
+data/*.db-journal
+data/*.sqlite
+data/*.sqlite3
+*.db
+*.sqlite
+
+# n8n runtime data and credentials
+n8n/credentials/*.json
+!n8n/credentials/README.md
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Package manager lock files (generated)
+uv.lock
+poetry.lock

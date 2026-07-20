@@ -1,0 +1,34 @@
+[
+  {
+    "id": "deal1",
+    "shop": { "id": 1, "name": "Steam" },
+    "price": {
+      "amount": 29.99,
+      "currency": "USD",
+      "regular": { "amount": 59.99 },
+      "cut": 50
+    },
+    "url": "https://isthereanydeal.com/deal/deal1/"
+  },
+  {
+    "id": "deal2",
+    "shop": { "id": 17, "name": "Epic Games Store" },
+    "price": {
+      "amount": 0.0,
+      "currency": "USD",
+      "regular": { "amount": 39.99 },
+      "cut": 100
+    },
+    "url": "https://isthereanydeal.com/deal/deal2/"
+  },
+  {
+    "id": "deal3",
+    "shop": { "id": 7, "name": "GOG" },
+    "price": {
+      "amount": 14.99,
+      "currency": "USD",
+      "cut": 25
+    },
+    "url": "https://isthereanydeal.com/deal/deal3/"
+  }
+]

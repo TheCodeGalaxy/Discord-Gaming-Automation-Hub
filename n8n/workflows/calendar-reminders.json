@@ -1,0 +1,94 @@
+{
+  "name": "Calendar Reminders",
+  "nodes": [
+    {
+      "id": "cron-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300],
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "cronExpression", "expression": "0 * * * *"}]
+        }
+      }
+    },
+    {
+      "id": "set-body",
+      "name": "Build Request Body",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [450, 300],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "bodyString",
+              "value": "{\"action\":\"calendar_reminders\",\"data\":{}}"
+            }
+          ],
+          "number": [],
+          "boolean": [],
+          "object": [],
+          "array": [],
+          "options": {}
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "crypto",
+      "name": "Generate HMAC Signature",
+      "type": "n8n-nodes-base.crypto",
+      "typeVersion": 2,
+      "position": [650, 300],
+      "parameters": {
+        "operation": "hmac",
+        "value": "={{ $json.bodyString }}",
+        "secret": "={{ $env.N8N_WEBHOOK_SECRET }}",
+        "algorithm": "SHA256",
+        "encoding": "hex",
+        "propertyName": "signature"
+      }
+    },
+    {
+      "id": "http-request",
+      "name": "Send Webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [850, 300],
+      "parameters": {
+        "method": "POST",
+        "url": "http://gaming-hub:8000/webhooks/n8n",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyContentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {"name": "action", "value": "calendar_reminders"},
+            {"name": "data", "value": "=({})"}
+          ]
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "X-Hub-Signature-256", "value": "={{ $json.signature }}"}
+          ]
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {"main": [[{"node": "Build Request Body", "type": "main", "index": 0}]]},
+    "Build Request Body": {"main": [[{"node": "Generate HMAC Signature", "type": "main", "index": 0}]]},
+    "Generate HMAC Signature": {"main": [[{"node": "Send Webhook", "type": "main", "index": 0}]]}
+  },
+  "settings": {
+    "timezone": "UTC",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true
+  },
+  "staticData": null,
+  "tags": []
+}

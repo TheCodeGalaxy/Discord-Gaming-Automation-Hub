@@ -1,0 +1,122 @@
+{
+  "data": {
+    "Catalog": {
+      "searchStore": {
+        "elements": [
+          {
+            "id": "clint",
+            "title": "Doki Doki Literature Club",
+            "productName": "Doki Doki Literature Club",
+            "description": "A horror-themed visual novel.",
+            "shortDescription": "Welcome to the Literature Club!",
+            "namespace": "clint",
+            "catalogId": "doki-doki-literature-club",
+            "offerType": "BASE_GAME",
+            "keyImages": [
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/clint/EGS_DokiDokiLiteratureClub_Salad_Game_S1_2560x1440-b5240f5a9ce513558e02e9f1e2c44a7c"
+              },
+              {
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/offer/clint/EGS_DokiDokiLiteratureClub_Salad_Game_S1_2560x1440-b5240f5a9ce513558e02e9f1e2c44a7c"
+              }
+            ],
+            "releaseDate": "2017-09-22T00:00:00.000Z",
+            "genres": [
+              {"name": "Indie"},
+              {"name": "Visual Novel"}
+            ],
+            "tags": [
+              {"name": "Single Player"},
+              {"name": "Horror"}
+            ],
+            "developer": "Team Salvato",
+            "publisher": "Team Salvato",
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2024-06-20T15:00:00.000Z",
+                      "endDate": "2024-06-27T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 100
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            },
+            "price": {
+              "totalPrice": {
+                "originalPrice": 1499,
+                "discountPrice": 0,
+                "fmtPrice": {
+                  "originalPrice": "14.99",
+                  "discountPrice": "0"
+                }
+              }
+            }
+          },
+          {
+            "id": "garden",
+            "title": "Garden Paws",
+            "productName": "Garden Paws",
+            "description": "Build your dream garden.",
+            "shortDescription": "Garden Paws is a relaxing farm sim.",
+            "namespace": "garden",
+            "catalogId": "garden-paws",
+            "offerType": "BASE_GAME",
+            "keyImages": [
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/garden/EGS_GardenPaws_BittenToast_Game_S1_2560x1440-abc"
+              }
+            ],
+            "releaseDate": "2023-03-15T00:00:00.000Z",
+            "genres": [
+              {"name": "Simulation"},
+              {"name": "Indie"}
+            ],
+            "tags": [
+              {"name": "Single Player"},
+              {"name": "Building"}
+            ],
+            "developer": "Bitten Toast Games",
+            "publisher": "Bitten Toast Games",
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2024-06-20T15:00:00.000Z",
+                      "endDate": "2024-06-27T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 100
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            },
+            "price": {
+              "totalPrice": {
+                "originalPrice": 1999,
+                "discountPrice": 0,
+                "fmtPrice": {
+                  "originalPrice": "19.99",
+                  "discountPrice": "0"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

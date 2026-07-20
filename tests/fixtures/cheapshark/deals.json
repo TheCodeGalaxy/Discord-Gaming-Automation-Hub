@@ -1,0 +1,44 @@
+[
+  {
+    "dealID": "abc123",
+    "title": "Hades",
+    "salePrice": "12.49",
+    "normalPrice": "24.99",
+    "savings": "50.02",
+    "storeID": "1",
+    "thumb": "https://cdn.cheapshark.com/thumb/hades.jpg",
+    "steamRatingPercent": "96",
+    "steamRatingCount": "253814",
+    "steamAppID": "1145360",
+    "releaseDate": 1600128000,
+    "lastChange": 1698000000
+  },
+  {
+    "dealID": "def456",
+    "title": "Celeste",
+    "salePrice": "4.99",
+    "normalPrice": "19.99",
+    "savings": "75.04",
+    "storeID": "1",
+    "thumb": "https://cdn.cheapshark.com/thumb/celeste.jpg",
+    "steamRatingPercent": "98",
+    "steamRatingCount": "77234",
+    "steamAppID": "504230",
+    "releaseDate": 1529625600,
+    "lastChange": 1698100000
+  },
+  {
+    "dealID": "ghi789",
+    "title": "Free Game",
+    "salePrice": "0",
+    "normalPrice": "29.99",
+    "savings": "100",
+    "storeID": "3",
+    "thumb": "https://cdn.cheapshark.com/thumb/freegame.jpg",
+    "steamRatingPercent": null,
+    "steamRatingCount": null,
+    "steamAppID": null,
+    "releaseDate": null,
+    "lastChange": 1698200000
+  }
+]

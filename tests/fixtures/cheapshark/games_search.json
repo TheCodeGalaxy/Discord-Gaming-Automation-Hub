@@ -1,0 +1,20 @@
+[
+  {
+    "gameID": 612,
+    "steamAppID": "1091500",
+    "cheapest": "29.99",
+    "cheapestDealID": "abc123def456",
+    "external": "Cyberpunk 2077",
+    "thumb": "https://cdn.cheapshark.com/thumb/cyberpunk.jpg",
+    "internalName": "CYBERPUNK2077"
+  },
+  {
+    "gameID": 1857,
+    "steamAppID": null,
+    "cheapest": "14.99",
+    "cheapestDealID": "ghi789jkl012",
+    "external": "Cyberpunk 2077: Phantom Liberty",
+    "thumb": "https://cdn.cheapshark.com/thumb/phantom.jpg",
+    "internalName": "CYBERPUNK2077PHANTOMLIBERTY"
+  }
+]

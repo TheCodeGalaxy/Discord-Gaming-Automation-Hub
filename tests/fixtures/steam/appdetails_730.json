@@ -1,0 +1,43 @@
+{
+  "730": {
+    "success": true,
+    "data": {
+      "type": "game",
+      "name": "Counter-Strike 2",
+      "steam_appid": 730,
+      "required_age": 0,
+      "is_free": true,
+      "detailed_description": "Counter-Strike 2 is the largest technical leap in Counter-Strike history.",
+      "short_description": "The landmark team-based shooter from Valve.",
+      "header_image": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+      "developers": ["Valve"],
+      "publishers": ["Valve"],
+      "genres": [
+        {"description": "Action", "id": "1"},
+        {"description": "Free to Play", "id": "37"}
+      ],
+      "tags": [
+        {"description": "FPS", "id": 32},
+        {"description": "Multiplayer", "id": 9},
+        {"description": "Shooter", "id": 2}
+      ],
+      "release_date": {
+        "coming_soon": false,
+        "date": "21 Aug 2012"
+      },
+      "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/counter-strike-2"
+      },
+      "recommendations": {
+        "total": 500000
+      },
+      "ratings": {
+        "positive": {
+          "total_positive": 450000,
+          "total_negative": 50000
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "Catalog": {
+      "searchStore": {
+        "elements": [
+          {
+            "id": "cyberpunk1",
+            "title": "Cyberpunk 2077",
+            "productName": "Cyberpunk 2077",
+            "description": "An open-world action-adventure set in Night City.",
+            "shortDescription": "Open-world action RPG from CD PROJEKT RED.",
+            "namespace": "cbd",
+            "catalogId": "cyberpunk-2077",
+            "offerType": "BASE_GAME",
+            "keyImages": [
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/cbd/EGS_Cyberpunk2077_CDPROJEKTRED_S1_2560x1440-abc"
+              }
+            ],
+            "releaseDate": "2020-12-10T00:00:00.000Z",
+            "genres": [
+              {"name": "Action"},
+              {"name": "RPG"}
+            ],
+            "tags": [
+              {"name": "Open World"},
+              {"name": "Story Rich"}
+            ],
+            "developer": "CD PROJEKT RED",
+            "publisher": "CD PROJEKT RED",
+            "price": {
+              "totalPrice": {
+                "originalPrice": 5999,
+                "discountPrice": 2999,
+                "fmtPrice": {
+                  "originalPrice": "59.99",
+                  "discountPrice": "29.99"
+                }
+              }
+            }
+          },
+          {
+            "id": "ghostrunner2",
+            "title": "Ghostrunner 2",
+            "productName": "Ghostrunner 2",
+            "namespace": "ghost",
+            "catalogId": "ghostrunner-2",
+            "offerType": "BASE_GAME",
+            "keyImages": [
+              {"type": "Thumbnail", "url": "https://cdn1.epicgames.com/offer/ghost/thumb.png"}
+            ],
+            "genres": [{"name": "Action"}],
+            "tags": [],
+            "developer": "One More Level",
+            "publisher": "505 Games"
+          },
+          {
+            "id": "stray",
+            "title": "Stray",
+            "productName": "Stray",
+            "namespace": "stray",
+            "catalogId": "stray",
+            "offerType": "BASE_GAME",
+            "keyImages": [],
+            "genres": [{"name": "Adventure"}],
+            "tags": [],
+            "developer": "BlueTwelve",
+            "publisher": "Annapurna"
+          }
+        ]
+      }
+    }
+  }
+}

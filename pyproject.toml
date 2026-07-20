@@ -1,0 +1,222 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gaming-hub"
+version = "0.1.0"
+description = "A self-hosted Discord Gaming Automation Hub powered by free public gaming data providers."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+authors = [
+    { name = "Open Source Contributors" },
+]
+keywords = [
+    "discord",
+    "gaming",
+    "automation",
+    "self-hosted",
+    "free-games",
+    "deals",
+    "cheapshark",
+    "epic-games",
+    "steam",
+    "isthereanydeal",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+]
+dependencies = [
+    "discord-py>=2.4.0",
+    "httpx[http2]>=0.27.0",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.3.0",
+    "sqlalchemy>=2.0.0",
+    "aiosqlite>=0.20.0",
+    "alembic>=1.13.0",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.0",
+    "python-dotenv>=1.0.0",
+    "croniter>=2.0.0",
+    "structlog>=24.0.0",
+    "orjson>=3.10.0",
+    "tenacity>=8.4.0",
+    "rich>=13.7.0",
+    "typer>=0.12.0",
+    "google-api-python-client>=2.120.0",
+    "google-auth>=2.30.0",
+    "google-auth-oauthlib>=1.2.0",
+    "google-auth-httplib2>=0.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=5.0.0",
+    "pytest-xdist>=3.6.0",
+    "httpx>=0.27.0",
+    "respx>=0.21.0",
+    "factory-boy>=3.3.0",
+    "faker>=25.0.0",
+    "mypy>=1.10.0",
+    "ruff>=0.5.0",
+    "pre-commit>=3.7.0",
+    "coverage>=7.5.0",
+    "bandit>=1.7.9",
+    "safety>=3.2.0",
+    "types-croniter>=2.0.0",
+]
+
+[project.scripts]
+gaming-hub = "gaming_hub.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/abdullah/discord-gaming-automation-hub"
+Documentation = "https://github.com/abdullah/discord-gaming-automation-hub/tree/main/docs"
+Repository = "https://github.com/abdullah/discord-gaming-automation-hub.git"
+Issues = "https://github.com/abdullah/discord-gaming-automation-hub/issues"
+Changelog = "https://github.com/abdullah/discord-gaming-automation-hub/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gaming_hub"]
+
+[tool.hatch.version]
+path = "src/gaming_hub/__init__.py"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+indent-width = 4
+fix = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "D",   # pydocstyle
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "Q",   # flake8-quotes
+    "PTH", # flake8-use-pathlib
+    "ERA", # eradicate
+    "PL",  # Pylint
+    "RUF", # Ruff-specific rules
+]
+ignore = [
+    "D100",  # Missing module docstring (enforced globally, verbose for small packages)
+    "D104",  # Missing public package docstring
+    "D203",  # One blank line before class docstring (conflicts with D211)
+    "D213",  # Multi-line docstring summary should start at the second line
+    "D406",  # Section name should end with newline
+    "D407",  # Missing dashed underline after section
+    "D413",  # Missing blank line after last section
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+known-first-party = ["gaming_hub"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+show_error_codes = true
+pretty = true
+plugins = ["pydantic.mypy"]
+exclude = [
+    "^tests/",
+    "^scripts/",
+]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "-ra",
+    "--cov=gaming_hub",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--cov-report=html",
+]
+filterwarnings = [
+    "error",
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+]
+markers = [
+    "unit: Unit tests (fast, isolated, no I/O).",
+    "integration: Integration tests (may hit real or fake external services).",
+    "slow: Tests that take longer than one second.",
+    "network: Tests that perform real network requests.",
+]
+
+[tool.coverage.run]
+source = ["src/gaming_hub"]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/__main__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B101"]  # assert_used is acceptable in tests; we keep tests excluded anyway.
+
+[tool.typer]
+name = "gaming-hub"

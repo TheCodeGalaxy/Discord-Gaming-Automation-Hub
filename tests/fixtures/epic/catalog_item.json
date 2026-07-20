@@ -1,0 +1,37 @@
+{
+  "id": "clint",
+  "title": "Doki Doki Literature Club",
+  "productName": "Doki Doki Literature Club",
+  "description": "A horror-themed visual novel.",
+  "shortDescription": "Welcome to the Literature Club!",
+  "namespace": "clint",
+  "catalogId": "doki-doki-literature-club",
+  "offerType": "BASE_GAME",
+  "keyImages": [
+    {
+      "type": "Thumbnail",
+      "url": "https://cdn1.epicgames.com/offer/clint/EGS_DokiDokiLiteratureClub_Salad_Game_S1_2560x1440-b5240f5a9ce513558e02e9f1e2c44a7c"
+    }
+  ],
+  "releaseDate": "2017-09-22T00:00:00.000Z",
+  "genres": [
+    {"name": "Indie"},
+    {"name": "Visual Novel"}
+  ],
+  "tags": [
+    {"name": "Single Player"},
+    {"name": "Horror"}
+  ],
+  "developer": "Team Salvato",
+  "publisher": "Team Salvato",
+  "price": {
+    "totalPrice": {
+      "originalPrice": 1499,
+      "discountPrice": 0,
+      "fmtPrice": {
+        "originalPrice": "14.99",
+        "discountPrice": "0"
+      }
+    }
+  }
+}
