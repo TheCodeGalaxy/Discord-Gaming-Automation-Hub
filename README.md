@@ -88,12 +88,12 @@ Unlike most Discord gaming bots, this project is designed to be:
 
 ### 🎮 Interactive Discord Interface
 <p align="center">
-  <img src="imgs/discord_preview.jpg" alt="Discord Bot Preview" width="90%">
+  <img src="imgs/discord_preview.png" alt="Discord Bot Preview" width="90%">
 </p>
 
 ### 📅 Seamless Google Calendar Synchronization
 <p align="center">
-  <img src="imgs/calendar_preview.jpg" alt="Google Calendar Sync Preview" width="90%">
+  <img src="imgs/calendar_preview.png" alt="Google Calendar Sync Preview" width="90%">
 </p>
 
 ```text
